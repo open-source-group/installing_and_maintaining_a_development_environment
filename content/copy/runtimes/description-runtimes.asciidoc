@@ -1,0 +1,21 @@
+= Installing and Maintaining Runtimes
+:author: Robert Greathouse
+:email: robert@opensource.io
+
+The basis of any modern development environment is the language runtime. Setting aside languages like C, C++, and Assembly; most modern languages run in some kind of interpretive layer commonly called a runtime. This can be a Just-In-Time compiler assisted by precompiled code like in Java; or an interpreter like Javascript. This middle layer often requires additional steps to install. Though some do come with many operating systems. One of the reasons MacOS is popular is because it comes with several such runtimes preinstalled. Often developers will need several versions of their runtime. And this can complicate the installation process. In this series we'll cover how to install and maintain common runtimes.
+
+Fortunately, every modern OS has some sort of package manager. Unfortunately, it's an additional installation on Windows and MacOS. So using a package manager might not always been an option. But, if you don't the the privileges to install a package manager, you probably can't install an additional runtime. In these cases your IT department likely has a process to request they be installed. But, we'll make sure to go through all the installation options for each OS.
+
+* Java
+
+== Windows
+
+== MacOS
+
+* Java
+
+== Debian Based Linux (Debian, Ubuntu, Kali)
+
+== Fedora Based Linux (Fedora)
+
+== Red Hat Enterprise Linux / CentOS

@@ -1,0 +1,36 @@
+= Installing and Maintaining Java
+:author: Robert Greathouse, Brandon
+:email: robert@opensource.io, brandon@opensource.io
+
+Java is an odd language. It made Object Oriented programming mainstream. I introduced the concept of an interpretive layer to enable Write-Once-Run-Anywhere. Java also introduced the idea of runtime memory management. Prior to Java developers had to use compilers specific to their hardware. But, while Java simplified development it still required a hardware specific layer called the Java Virtual Machine (JVM).
+
+Java has undergone a lot of changes over the years. And this has led to a need to test an sometimes modify code to work on new versions. Not often, and usually relegated to vendor provided implementations of standard interfaces. But, this still means that developers sometimes need to maintain several versions fo java and be able to switch between them easily.
+
+You can get Java in two main release. The Java Runtime Environment (JRE), and the Java Development Kit (JDK). It's easy enough to know which you need, the JDK. Why? Well, the JDK includes everything that developers need to write and compile Java code. But, some applications need the JDK in order to run correctly. You can often get away with installing just the JRE if you only want to run Java applications. But there's little reason not to just always install the JDK.
+
+Further complicating things, there are several distributions of the JDK.  https://www.java.com/en/[Oracle] is current canonical developer of Java. They maintain the project acquired from Sun years ago. The most popular distribution in use, you can find the Oracle JDK preinstalled on MacOS and Windows now. But several companies and open source projects have developed their own JDKs. These other distributions duplicate functionality from the Oracle JDK.
+
+IBM provides their own https://www.ibm.com/developerworks/java/jdk/[JDK] for their Java middleware products, like WebSphere. And their OSes, like z/OS. You can download this from the previous link. We won't be covering the installation of the IBM JDK on z/OS or the IBM JDK on z Systems hardware. I don't happen to have mainframes lying around for demonstrations. But the process is much the same. And hey, you're paying IBM for support. Might as well use it. And you'd only use the IBM JDK for running IBM products.
+
+The http://openjdk.java.net/[OpenJDK] is pretty much what it sounds like. An open source implementation of the Oracle JDK. It's main purpose was provide a JVM outside the licensing control of Oracle. This was done for a variety of reasons I'll save for arguments over drinks at conferences. But, it does give us a JDK we can examine and modify. If you really want to. Most developers just the Oracle JDK. But OpenJDK does have it's adherents. Especially amongst the Linux community. Most vendors will support their products on the OpenJDK. Currently the OpenJDK is only available on Windows and Linux.
+
+There is also https://www.azul.com/products/zing/[Zing] from https://www.azul.com/[Azul Systems]. The main feature of Zing is it's more flexible and scalable memory management. Java was never intended for the terabytes of memory possible on the top tier hardware. And some use cases need more advanced and intelligent memory management. Azul Systems also included several management and monitoring tools. But, as Zing is a paid product, we won't be covering it here. Azul Systems does maintain a build of the OpenJDK that we will cover.
+
+== Windows
+* Oracle
+* OpenJDK
+* Zulu
+
+== MacOS
+* Oracle
+* Zulu
+
+== Fedora based Linux
+* Oracle
+* OpenJDK
+* Zulu
+
+== Red Hat Enterprise Linux / CentOS
+* Oracle
+* OpenJDK
+* Zulu

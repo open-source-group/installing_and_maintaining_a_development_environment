@@ -1,0 +1,57 @@
+= Installing and Maintaining Java on MacOS
+:author: Robert Greathouse
+:email: robert@opensource.io
+:revnumber:
+:revdate: 2018-04-16
+:revremark: WIP
+:imagesdir: ../../../../../images
+
+Maintaining Java on MacOS is a bit complicated.
+Apple preinstalls a Java Development Kit package.
+And maintains it through it's integrated update process.
+This means that you'll have the latest version of the Oracle JDK.
+Unfortunately Apple doesn't provide a simple way to downgrade or keep previous versions.
+But, we'll provide instructions here.
+
+== Oracle JDK
+=== Manual Installation
+Applying all updates from Apple will ensure you have the latest Oracle JDK.
+This can be done through the Apple Appstore.
+This can be found in your Applications folder on your Dock.
+
+image::screenshots/macos/os_system/image-macos-Applications_Folder_Location.png[MacOS Applications Folder Location]
+
+Then open your Appstore.
+
+image::screenshots/macos/appstore/image-macos-Appstore_Location.png[Appstore Location]
+
+In the Appstore, click Updates in the top menu.
+
+image::screenshots/macos/appstore/image-macos-Appstore_Updates_Location.png[Appstore Updates Location]
+
+If you see any updates for MacOS, install them.
+The details for each update should explain what is included.
+
+image::screenshots/macos/appstore/image-macos-Appstore_Updates_Screen.png[Appstore Updates Screen]
+
+You can also see a history of previous patches.
+Since I've been a good boy, you can see I have no pending patches.
+
+But what is you need an earlier version?
+Or even an unreleased version?
+Well, http://www.oracle.com/technetwork/java/javase/archive-139210.html[Oracle has an archive of all Java runtimes for all supported OSes].
+
+image::screenshots/websites/oracle/image-screenshot-website-oracle_java_runtime_archive.png[Oracle Jave Runtime Archive]
+
+Simply click the version you need.
+This will take you to a page to download an installer specific to your OS.
+Make sure to accept the license agreement with the radio button at the top of the list of downloads.
+
+image::screenshots/websites/oracle/image-screenshot-website-oracle_java_7_available_downloads.png[Available Java 7 Downloads]
+
+For MacOS you'll get a DMG file. Simply double click it to mount.
+MacOS should automatically open the disc image and show you a Finder window with a PKG file.
+
+
+If you're not familiar, PKG files are modifications to MacOS.
+Installing Java does require some changes to the system.
